@@ -21,7 +21,7 @@ public class Buyer extends User {
 
     public void checkAvailability(String showNumber) {
         try {
-            Show show = Main.shows.get(showNumber);
+            Show show = Main.getShow(showNumber);
             System.out.println(show.getAvailableSeats());
         } catch (Exception e) {
             throw new IllegalArgumentException("Oops, the show you are looking for does not exist" + e.getMessage());

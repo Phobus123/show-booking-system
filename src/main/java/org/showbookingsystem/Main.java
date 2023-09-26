@@ -10,13 +10,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 public class Main {
     // HashMap<showNumber, Show>
-    public static HashMap<String, Show> shows = new HashMap<>();
-    // HashMap<phoneNumber, buyer>
-    public static HashMap<String, Buyer> buyers = new HashMap<>();
+    private static HashMap<String, Show> shows = new HashMap<>();
     // HashMap<showNumber, Ticket[]>
-    public static HashMap<String, ArrayList<Ticket>> ticketsByShow = new HashMap<>();
+    private static HashMap<String, ArrayList<Ticket>> ticketsByShow = new HashMap<>();
     // HashMap <ticketId, Ticket>
-    public static HashMap<String, Ticket> tickets = new HashMap<>();
+    private static HashMap<String, Ticket> tickets = new HashMap<>();
 
     public static void main(String[] args) {
         System.out.println("Show Booking System");
@@ -89,9 +87,21 @@ public class Main {
         tickets.remove(ticketId);
     }
 
+    public static void addShow(Show show) {
+        shows.put(show.getShowNumber(), show);
+    }
+
     public static Show getShow(String showNumber) {
         if (shows.containsKey(showNumber)) {
             return shows.get(showNumber);
+        }
+
+        throw new IllegalArgumentException("Show with showNumber: " + showNumber + " does not exist");
+    }
+
+    public static ArrayList<Ticket> getTicketsForShow(String showNumber) {
+        if (ticketsByShow.containsKey(showNumber)) {
+            return ticketsByShow.get(showNumber);
         }
 
         throw new IllegalArgumentException("Show with showNumber: " + showNumber + " does not exist");

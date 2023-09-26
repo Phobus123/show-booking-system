@@ -1,9 +1,5 @@
 package org.showbookingsystem.classes;
 
-import org.showbookingsystem.classes.Buyer;
-import org.showbookingsystem.classes.Seat;
-import org.showbookingsystem.classes.Show;
-import org.showbookingsystem.classes.Ticket;
 import org.showbookingsystem.utils.LocalDateTimeProvider;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

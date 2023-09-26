@@ -1,11 +1,8 @@
 package org.showbookingsystem.classes;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.showbookingsystem.classes.Seat;
-import org.showbookingsystem.classes.Show;
 
 import java.util.ArrayList;
 
@@ -39,9 +36,5 @@ class ShowTest {
         for (Seat seat : seats) {
             assertEquals(true, seat.isAvailable());
         }
-    }
-
-    @AfterEach
-    void tearDown() {
     }
 }

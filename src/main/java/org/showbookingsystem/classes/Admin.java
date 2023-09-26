@@ -20,11 +20,11 @@ public class Admin extends User {
 
     public void setupShow(String showNumber, int numberOfRows, int numberOfSeatsPerRow, int cancellationWindow) {
         Show show = new Show(showNumber, numberOfRows, numberOfSeatsPerRow, cancellationWindow);
-        Main.shows.put(showNumber, show);
+        Main.addShow(show);
     }
 
     public void viewShow(String showNumber) {
-        ArrayList<Ticket> tickets = Main.ticketsByShow.get(showNumber);
+        ArrayList<Ticket> tickets = Main.getTicketsForShow(showNumber);
         if (tickets == null) {
             System.out.println("No tickets for this show");
             return;
