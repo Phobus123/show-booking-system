@@ -23,7 +23,6 @@ public class Main {
         while (true) {
             try {
                 String command = in.next();
-                System.out.println(command);
 
                 switch (command) {
                     case "Setup":

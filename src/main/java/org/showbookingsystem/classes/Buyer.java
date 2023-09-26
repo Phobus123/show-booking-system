@@ -43,13 +43,13 @@ public class Buyer extends User {
             throw new IllegalArgumentException("Phone number provided " + phoneNumber + " does not match phoneNumber of ticket, unable to cancel");
         }
 
-        if (ticket.isCancellable()) {
-            ticket.cancel();
-            Main.removeTicket(ticketId);
+        if (!ticket.isCancellable()) {
+            System.out.println("Sorry, unable to cancel beyond the cancellation window of: " + ticket.getShow().getCancellationWindow());
             return;
         }
 
-        System.out.println("Sorry, unable to cancel beyond the cancellation window of: " + ticket.getShow().getCancellationWindow());
+        ticket.cancel();
+        Main.removeTicket(ticketId);
     }
 
     public void book(String showNumber, String phoneNumber, String[] listOfSeatsNumbers) {

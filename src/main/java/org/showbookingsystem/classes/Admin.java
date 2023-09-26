@@ -31,7 +31,8 @@ public class Admin extends User {
         }
 
         tickets.forEach(ticket -> {
-            System.out.println(ticket.getId());
+            System.out.printf("Show Number: %s, Ticket Number: %s, Buyer Phone Number: %s, Seat Numbers: %s", ticket.getShow().getShowNumber(), ticket.getId(), ticket.getPhoneNumber(), ticket.getSeatsString());
+            System.out.println();
         });
     }
 }

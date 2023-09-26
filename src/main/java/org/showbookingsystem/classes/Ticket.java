@@ -51,7 +51,15 @@ public class Ticket {
         return id;
     }
 
-    public boolean isCancelled() {
-        return isCancelled;
+    public String getSeatsString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < this.seats.size(); i++) {
+            System.out.println(this.seats.get(i).getSeatNumber());
+            sb.append(this.seats.get(i).getSeatNumber());
+            if (i != this.seats.size() - 1) {
+                sb.append(", ");
+            }
+        }
+        return sb.toString();
     }
 }
