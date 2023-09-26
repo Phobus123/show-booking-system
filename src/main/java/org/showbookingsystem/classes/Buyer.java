@@ -1,7 +1,7 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
-import org.example.Main;
-import org.example.utils.LocalDateTimeProvider;
+import org.showbookingsystem.Main;
+import org.showbookingsystem.utils.LocalDateTimeProvider;
 
 import java.util.ArrayList;
 import java.util.Objects;

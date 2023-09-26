@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
 public class Seat {
     private boolean isAvailable = true;

@@ -1,9 +1,8 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
-import org.example.Main;
+import org.showbookingsystem.Main;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Admin extends User {
 

@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
 import org.showbookingsystem.classes.Seat;
 import org.showbookingsystem.classes.Show;

@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.showbookingsystem.classes;
 
 import static org.junit.jupiter.api.Assertions.*;
 

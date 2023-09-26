@@ -1,9 +1,9 @@
-package org.example;
+package org.showbookingsystem;
 
-import org.example.classes.Admin;
-import org.example.classes.Buyer;
-import org.example.classes.Show;
-import org.example.classes.Ticket;
+import org.showbookingsystem.classes.Admin;
+import org.showbookingsystem.classes.Buyer;
+import org.showbookingsystem.classes.Show;
+import org.showbookingsystem.classes.Ticket;
 
 import java.util.ArrayList;
 import java.util.HashMap;
