@@ -1,12 +1,13 @@
 package org.example.classes;
 
-import org.example.Main;
-import org.example.utils.LocalDateTimeProvider;
-import org.junit.jupiter.api.AfterEach;
+import org.showbookingsystem.classes.Buyer;
+import org.showbookingsystem.classes.Seat;
+import org.showbookingsystem.classes.Show;
+import org.showbookingsystem.classes.Ticket;
+import org.showbookingsystem.utils.LocalDateTimeProvider;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 
 import java.util.ArrayList;
